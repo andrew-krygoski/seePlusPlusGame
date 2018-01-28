@@ -1,0 +1,31 @@
+﻿  Checking Build System
+  CMake is re-running because C:/sfml_built/CMakeFiles/generate.stamp dependency file is missing.
+  -- Building for: Visual Studio 15 2017
+  -- The C compiler identification is MSVC 19.11.25508.2
+  -- The CXX compiler identification is MSVC 19.11.25508.2
+  -- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.11.25503/bin/HostX86/x86/cl.exe
+  -- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.11.25503/bin/HostX86/x86/cl.exe -- works
+  -- Detecting C compiler ABI info
+  -- Detecting C compiler ABI info - done
+  -- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.11.25503/bin/HostX86/x86/cl.exe
+  -- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.11.25503/bin/HostX86/x86/cl.exe -- works
+  -- Detecting CXX compiler ABI info
+  -- Detecting CXX compiler ABI info - done
+  -- Detecting CXX compile features
+  -- Detecting CXX compile features - done
+  -- Looking for sys/types.h
+  -- Looking for sys/types.h - found
+  -- Looking for stdint.h
+  -- Looking for stdint.h - found
+  -- Looking for stddef.h
+  -- Looking for stddef.h - found
+  -- Check size of void*
+  -- Check size of void* - done
+  -- Found OpenGL: opengl32   
+  -- Found JPEG: C:/Users/Andrew/Downloads/SFML-2.4.2-sources/SFML-2.4.2/extlibs/libs-msvc-universal/x86/jpeg.lib  
+  -- Found OpenAL: C:/Users/Andrew/Downloads/SFML-2.4.2-sources/SFML-2.4.2/extlibs/libs-msvc-universal/x86/openal32.lib  
+  -- Found VORBIS: C:/Users/Andrew/Downloads/SFML-2.4.2-sources/SFML-2.4.2/extlibs/libs-msvc-universal/x86/vorbis.lib  
+  -- Found FLAC: C:/Users/Andrew/Downloads/SFML-2.4.2-sources/SFML-2.4.2/extlibs/libs-msvc-universal/x86/flac.lib  
+  -- Configuring done
+  -- Generating done
+  -- Build files have been written to: C:/sfml_built

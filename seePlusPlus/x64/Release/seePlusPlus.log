@@ -1,11 +1,15 @@
-﻿  Interaction.cpp
+﻿  Game.cpp
+  GameObject.cpp
+  Interaction.cpp
 e:\visual studio\projects\seeplusplus\seeplusplus\WindowControl.h(17): warning C4091: 'static ': ignored on left of 'WindowController' when no variable is declared
   main.cpp
 e:\visual studio\projects\seeplusplus\seeplusplus\WindowControl.h(17): warning C4091: 'static ': ignored on left of 'WindowController' when no variable is declared
 main.cpp(29): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+  WindowControl.cpp
+e:\visual studio\projects\seeplusplus\seeplusplus\WindowControl.h(17): warning C4091: 'static ': ignored on left of 'WindowController' when no variable is declared
   Generating code
-  2 of 235 functions ( 0.9%) were compiled, the rest were copied from previous compilation.
+  11 of 235 functions ( 4.7%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+    8 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   seePlusPlus.vcxproj -> E:\Visual Studio\Projects\seePlusPlus\x64\Release\seePlusPlus.exe

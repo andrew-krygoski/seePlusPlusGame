@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Users/Andrew/Downloads/SFML-2.4.2-sources/SFML-2.4.2/src/SFML/Graphics/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindJPEG.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageMessage.cmake
+C:/Users/Andrew/Downloads/SFML-2.4.2-sources/SFML-2.4.2/cmake/Modules/FindFreetype.cmake

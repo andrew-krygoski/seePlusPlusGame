@@ -1,0 +1,24 @@
+﻿  Building Custom Rule C:/Users/Andrew/Downloads/SFML-2.4.2-sources/SFML-2.4.2/src/SFML/Window/CMakeLists.txt
+  CMake does not need to re-run because C:/sfml_built/src/SFML/Window/CMakeFiles/generate.stamp is up-to-date.
+  Context.cpp
+  GlContext.cpp
+  GlResource.cpp
+  Joystick.cpp
+  JoystickManager.cpp
+  Keyboard.cpp
+  Mouse.cpp
+  Touch.cpp
+  Sensor.cpp
+  SensorManager.cpp
+  VideoMode.cpp
+  Window.cpp
+  WindowImpl.cpp
+  WglContext.cpp
+  WglExtensions.cpp
+  InputImpl.cpp
+  JoystickImpl.cpp
+  SensorImpl.cpp
+  VideoModeImpl.cpp
+  WindowImplWin32.cpp
+  Generating Code...
+x64\Release\Context.obj : fatal error LNK1112: module machine type 'x64' conflicts with target machine type 'x86'

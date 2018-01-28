@@ -1,0 +1,23 @@
+﻿  Building Custom Rule C:/Users/Andrew/Downloads/SFML-2.4.2-sources/SFML-2.4.2/src/SFML/System/CMakeLists.txt
+  CMake does not need to re-run because C:/sfml_built/src/SFML/System/CMakeFiles/generate.stamp is up-to-date.
+  Clock.cpp
+  Err.cpp
+  Lock.cpp
+  Mutex.cpp
+  Sleep.cpp
+  String.cpp
+  Thread.cpp
+  ThreadLocal.cpp
+  Time.cpp
+  FileInputStream.cpp
+C:\Users\Andrew\Downloads\SFML-2.4.2-sources\SFML-2.4.2\src\SFML\System\FileInputStream.cpp(98): warning C4267: 'argument': conversion from 'size_t' to 'long', possible loss of data
+  MemoryInputStream.cpp
+  ClockImpl.cpp
+C:\Users\Andrew\Downloads\SFML-2.4.2-sources\SFML-2.4.2\src\SFML\System\Win32\ClockImpl.cpp(48): warning C4996: 'GetVersion': was declared deprecated
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um\sysinfoapi.h(184): note: see declaration of 'GetVersion'
+  MutexImpl.cpp
+  SleepImpl.cpp
+  ThreadImpl.cpp
+  ThreadLocalImpl.cpp
+  Generating Code...
+x64\Release\Clock.obj : fatal error LNK1112: module machine type 'x64' conflicts with target machine type 'x86'

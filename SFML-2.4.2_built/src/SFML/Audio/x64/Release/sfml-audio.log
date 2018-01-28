@@ -1,0 +1,25 @@
+﻿  Building Custom Rule C:/Users/Andrew/Downloads/SFML-2.4.2-sources/SFML-2.4.2/src/SFML/Audio/CMakeLists.txt
+  CMake does not need to re-run because C:/sfml_built/src/SFML/Audio/CMakeFiles/generate.stamp is up-to-date.
+  ALCheck.cpp
+  AlResource.cpp
+  AudioDevice.cpp
+  Listener.cpp
+  Music.cpp
+  Sound.cpp
+  SoundBuffer.cpp
+  SoundBufferRecorder.cpp
+  InputSoundFile.cpp
+  OutputSoundFile.cpp
+  SoundRecorder.cpp
+  SoundSource.cpp
+  SoundStream.cpp
+  SoundFileFactory.cpp
+  SoundFileReaderFlac.cpp
+  SoundFileReaderOgg.cpp
+  SoundFileReaderWav.cpp
+C:\Users\Andrew\Downloads\SFML-2.4.2-sources\SFML-2.4.2\src\SFML\Audio\SoundFileReaderWav.cpp(149): warning C4018: '<': signed/unsigned mismatch
+  SoundFileWriterFlac.cpp
+  SoundFileWriterOgg.cpp
+  SoundFileWriterWav.cpp
+  Generating Code...
+x64\Release\ALCheck.obj : fatal error LNK1112: module machine type 'x64' conflicts with target machine type 'x86'

@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/Users/Andrew/Downloads/SFML-2.4.2-sources/SFML-2.4.2/src/SFML/Main/CMakeLists.txt
+  CMake does not need to re-run because C:/sfml_built/src/SFML/Main/CMakeFiles/generate.stamp is up-to-date.
+  MainWin32.cpp
+x64\Release\MainWin32.obj : fatal error LNK1112: module machine type 'x64' conflicts with target machine type 'x86'
