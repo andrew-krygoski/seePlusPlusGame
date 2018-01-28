@@ -3,6 +3,5 @@
 #include <iostream>
 #include <chrono>
 #include <thread>
+#include <string>
 #include <Windows.h>
-#include "Interaction.h"
-#include "Misc.h"

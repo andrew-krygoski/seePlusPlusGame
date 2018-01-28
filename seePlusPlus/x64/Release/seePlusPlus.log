@@ -1,8 +1,11 @@
-﻿  main.cpp
-main.cpp(27): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+﻿  Interaction.cpp
+e:\visual studio\projects\seeplusplus\seeplusplus\WindowControl.h(17): warning C4091: 'static ': ignored on left of 'WindowController' when no variable is declared
+  main.cpp
+e:\visual studio\projects\seeplusplus\seeplusplus\WindowControl.h(17): warning C4091: 'static ': ignored on left of 'WindowController' when no variable is declared
+main.cpp(29): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
   Generating code
-  1 of 99 functions ( 1.0%) were compiled, the rest were copied from previous compilation.
+  2 of 235 functions ( 0.9%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   seePlusPlus.vcxproj -> E:\Visual Studio\Projects\seePlusPlus\x64\Release\seePlusPlus.exe
