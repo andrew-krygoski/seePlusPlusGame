@@ -5,9 +5,7 @@
 Game::Game()
 {
     //create init objects
-    sf::Texture tmp;
-    tmp.loadFromFile("wut.PNG");
-    this->objectContainer.push_back(GameObject(tmp));
+    this->objectContainer.push_back(GameObject("wut.PNG",0,0));
     this->objectContainer[0].setFocus(true);
 }
 
