@@ -7,53 +7,59 @@
 #define WC_I
 #include "WindowControl.h"
 #endif // WC_I
-#ifndef MI_I
-#define MI_I
-#include "Misc.h"
-#endif // MI_I
 const std::vector<int> arrowKeys({ 71,72,73,74 });
 
 class Interaction
 {
 public:
-    static GameObject handleKeyPress(sf::Event event, GameObject object)
+    static void handleKeyPress(sf::Event event)
     {
         if (!Misc<int>::Contains(arrowKeys, (int)event.key.code)) {
             std::cout << "That is not in my programming, idiot. Key Pressed: " << event.key.code << std::endl;
-            return object;
+            return;
         }
+        
+        //create a reference to the object that is our focus (aka the one we want to control)
+        GameObject &focused = *(theGame.getFocused());
 
-        if      (event.key.code == sf::Keyboard::Up && object.object.getPosition().y != 0) {
-            object.object.setPosition(object.object.getPosition().x, object.object.getPosition().y - 1);
-        }
-        else if (event.key.code == sf::Keyboard::Up)
-        {
-            std::cout << "we aint going further up ";
-        }
-        else if (event.key.code == sf::Keyboard::Down && object.object.getPosition().y != (WindowController().window.getSize().y - object.object.getLocalBounds().height)) {
-            object.object.setPosition(object.object.getPosition().x, object.object.getPosition().y + 1);
-        }
-        else if (event.key.code == sf::Keyboard::Down)
-        {
-            std::cout << "we aint going further Down ";
-        }
-        else if (event.key.code == sf::Keyboard::Left && object.object.getPosition().x != 0) {
-            object.object.setPosition(object.object.getPosition().x - 1, object.object.getPosition().y);
-        }
-        else if (event.key.code == sf::Keyboard::Left)
-        {
-            std::cout << "we aint going further left ";
-        }
-        else if (event.key.code == sf::Keyboard::Right && object.object.getPosition().x != (WindowController().window.getSize().x - object.object.getLocalBounds().height)) {
-            object.object.setPosition(object.object.getPosition().x + 1, object.object.getPosition().y);
-        }
-        else if (event.key.code == sf::Keyboard::Right)
-        {
-            std::cout << "we aint going further Right ";
-        }
+        if (willLeadOutOfBounds(focused, event.key.code))
+            return;
+
+        //quickly hit up our directionals, move if able
+        if (event.key.code == sf::Keyboard::Up) { focused.object.setPosition(focused.object.getPosition().x, focused.object.getPosition().y - 100); }
+        else if (event.key.code == sf::Keyboard::Down) { focused.object.setPosition(focused.object.getPosition().x, focused.object.getPosition().y + 100); }
+        else if (event.key.code == sf::Keyboard::Left) { focused.object.setPosition(focused.object.getPosition().x - 100, focused.object.getPosition().y); }
+        else if (event.key.code == sf::Keyboard::Right) { focused.object.setPosition(focused.object.getPosition().x + 100, focused.object.getPosition().y); }
         else
             std::cout << "shit don't work" << std::endl;
 
-        return object;
+    }
+
+private:
+    //if we make every screen a grid, this would be 10000x easier
+    static bool willLeadOutOfBounds(GameObject focused, sf::Keyboard::Key key)
+    {
+        if (key == sf::Keyboard::Up && focused.object.getPosition().y <= 100) 
+        {
+            std::cout << "we aint going further Up " << std::endl;
+            return true;
+        }
+        else if (key == sf::Keyboard::Down && focused.object.getPosition().y >= theWindow.window.getSize().y - focused.object.getLocalBounds().height)
+        {
+            std::cout << "we aint going further Down " << std::endl;
+            return true;
+        }
+        else if (key == sf::Keyboard::Left && focused.object.getPosition().x <= 100)
+        {
+            std::cout << "we aint going further Left " << std::endl;
+            return true;
+        }
+        else if (key == sf::Keyboard::Right && focused.object.getPosition().x >= theWindow.window.getSize().x - focused.object.getLocalBounds().width)
+        {
+            std::cout << "we aint going further Right " << std::endl;
+            return true;
+        }
+        else
+            return false;
     }
 };
