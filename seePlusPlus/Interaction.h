@@ -26,10 +26,10 @@ public:
             return;
 
         //quickly hit up our directionals, move if able
-        if (event.key.code == sf::Keyboard::Up) { focused.object.setPosition(focused.object.getPosition().x, focused.object.getPosition().y - 100); }
-        else if (event.key.code == sf::Keyboard::Down) { focused.object.setPosition(focused.object.getPosition().x, focused.object.getPosition().y + 100); }
-        else if (event.key.code == sf::Keyboard::Left) { focused.object.setPosition(focused.object.getPosition().x - 100, focused.object.getPosition().y); }
-        else if (event.key.code == sf::Keyboard::Right) { focused.object.setPosition(focused.object.getPosition().x + 100, focused.object.getPosition().y); }
+        if (event.key.code == sf::Keyboard::Up) { focused.object.setPosition(focused.object.getPosition().x, focused.object.getPosition().y - movespeed); }
+        else if (event.key.code == sf::Keyboard::Down) { focused.object.setPosition(focused.object.getPosition().x, focused.object.getPosition().y + movespeed); }
+        else if (event.key.code == sf::Keyboard::Left) { focused.object.setPosition(focused.object.getPosition().x - movespeed, focused.object.getPosition().y); }
+        else if (event.key.code == sf::Keyboard::Right) { focused.object.setPosition(focused.object.getPosition().x + movespeed, focused.object.getPosition().y); }
         else
             std::cout << "shit don't work" << std::endl;
 
@@ -39,22 +39,22 @@ private:
     //if we make every screen a grid, this would be 10000x easier
     static bool willLeadOutOfBounds(GameObject focused, sf::Keyboard::Key key)
     {
-        if (key == sf::Keyboard::Up && focused.object.getPosition().y <= 100) 
+        if (key == sf::Keyboard::Up && focused.object.getPosition().y < movespeed)
         {
             std::cout << "we aint going further Up " << std::endl;
             return true;
         }
-        else if (key == sf::Keyboard::Down && focused.object.getPosition().y >= theWindow.window.getSize().y - focused.object.getLocalBounds().height)
+        else if (key == sf::Keyboard::Down &&  movespeed > theWindow.window.getSize().y - (focused.object.getPosition().y + focused.object.getLocalBounds().height))
         {
             std::cout << "we aint going further Down " << std::endl;
             return true;
         }
-        else if (key == sf::Keyboard::Left && focused.object.getPosition().x <= 100)
+        else if (key == sf::Keyboard::Left && focused.object.getPosition().x < movespeed)
         {
             std::cout << "we aint going further Left " << std::endl;
             return true;
         }
-        else if (key == sf::Keyboard::Right && focused.object.getPosition().x >= theWindow.window.getSize().x - focused.object.getLocalBounds().width)
+        else if (key == sf::Keyboard::Right && movespeed > theWindow.window.getSize().x - (focused.object.getPosition().x + focused.object.getLocalBounds().width))
         {
             std::cout << "we aint going further Right " << std::endl;
             return true;
@@ -62,4 +62,5 @@ private:
         else
             return false;
     }
+    static const int movespeed = 10;
 };

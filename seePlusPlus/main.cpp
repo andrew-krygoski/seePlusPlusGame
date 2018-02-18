@@ -40,7 +40,7 @@ int main()
         std::cout << ie.what() << std::endl;
         theWindow.window.close();
 
-        //i don't know how to stop this bad schtuff
+        //i don't know how to System("Pause"); anymore...
         int tmp;
         std::cin >> tmp;
     }
