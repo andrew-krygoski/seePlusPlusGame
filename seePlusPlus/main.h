@@ -5,4 +5,5 @@
 #include <thread>
 #include <string>
 #include <Windows.h>
-#include <exception>
+<<<<<<< HEAD
+>>>>>>> master

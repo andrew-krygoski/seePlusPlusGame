@@ -4,15 +4,20 @@
 #include "Game.h"
 #endif // G_I
 
+
+///<summary>static Window that will contain everything the User sees</summary>
 static class WindowController {
 public:
-    static void drawScene(Game theGame) {
-        for each(GameObject object in theGame.objectContainer)
+    
+    ///<summary>loops through Game().objectContainer, sets the textures, and draws on the static window</summary>
+    static void drawScene() {
+        for each(GameObject toBeDrawn in theGame.constantObjects)
         {
-            object.object.setTexture(object.image);
-            window.draw(object.object); //lmao, how many times can i use the word object?
+            toBeDrawn.object.setTexture(toBeDrawn.image);
+            window.draw(toBeDrawn.object);
         }
     }
-    
+
+    ///<summary>static window that contains all the User can see</summary>
     static sf::RenderWindow window;
-};
+} theWindow;
