@@ -6,4 +6,12 @@
 #include <string>
 #include <Windows.h>
 <<<<<<< HEAD
+#include <exception>
+=======
+#include <exception>
+#include "Misc.h"
+
+struct ExceptionNoFocus : std::exception {
+    const char* what() const noexcept { return "\n\n!!!ERROR!!!\nCritical failure on Interaction: there is no object in focus currently."; }
+};
 >>>>>>> master
