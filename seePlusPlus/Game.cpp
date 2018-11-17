@@ -2,7 +2,11 @@
 
 bool Game::init = false;
 
-std::vector<GameObject> Game::constantObjects(1, GameObject("wut.PNG", 0, 0));
+std::vector<GameObject> Game::constantObjects{ 
+    GameObject("wordStart.PNG", 268, 680),  
+    GameObject("titleScreen.PNG", 100, 100),
+    GameObject("wordNah.PNG", 811, 680)
+};
 
 /*
 Game::Game()

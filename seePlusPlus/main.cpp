@@ -63,6 +63,12 @@ static void handleEvent(sf::Event event)
         theWindow.window.setView(sf::View(sf::FloatRect(0, 0, event.size.width, event.size.height)));
     }
 
+    //user clicked the screen so I guess we should handle that
+    if (event.type == sf::Event::MouseButtonPressed)
+    {
+        Interaction().handleMousePress(event);
+    }
+
     //irl, this will be way more convoluted past the 
     if (event.type == sf::Event::KeyPressed) {
        Interaction().handleKeyPress(event);

@@ -32,6 +32,10 @@ public:
     }
 
     static std::vector<GameObject> constantObjects;
+    
+    //I want to put a list of triggers so that the Interaction class can cycle through the triggers and apply the effects
+
+
     static bool init;
 } theGame;
 

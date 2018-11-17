@@ -147,6 +147,9 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="looks_like_I_blew_a_seal.jpg" />
+    <Image Include="titleScreen.png" />
+    <Image Include="wordNah.png" />
+    <Image Include="wordStart.png" />
     <Image Include="wut.PNG" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

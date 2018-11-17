@@ -15,7 +15,7 @@ public:
     static void handleKeyPress(sf::Event event)
     {
         if (!Misc<int>::Contains(arrowKeys, (int)event.key.code)) {
-            std::cout << "That is not in my programming, idiot. Key Pressed: " << event.key.code << std::endl;
+            std::cout << "Key Not coded: " << event.key.code << std::endl;
             return;
         }
         
@@ -33,6 +33,15 @@ public:
         else
             std::cout << "shit don't work" << std::endl;
 
+    }
+
+    static void handleMousePress(sf::Event event)
+    {
+        if (event.mouseButton.button == sf::Mouse::Left) {
+            std::cout << "Button pressed at:" << event.mouseButton.x << "," << event.mouseButton.y << std::endl;
+        }
+        else
+            std::cout << "Stop right clicking";
     }
 
 private:

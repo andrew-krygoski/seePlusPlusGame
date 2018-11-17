@@ -64,5 +64,14 @@
     <Image Include="wut.PNG">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="titleScreen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="wordNah.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="wordStart.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

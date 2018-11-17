@@ -16,6 +16,7 @@ public:
     GameObject(sf::Sprite);
     GameObject(sf::Texture);
     GameObject(std::string, float, float);
+    GameObject::GameObject(std::string, float, float, bool);
     ~GameObject();
     void setFocus(bool);
     bool toggleFocus();
@@ -25,5 +26,6 @@ public:
 
 protected:
     bool isFocus;
+    bool clickable;
 };
 
