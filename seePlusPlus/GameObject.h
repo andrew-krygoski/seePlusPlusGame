@@ -4,6 +4,8 @@
 #include "main.h"
 #endif // M_I
 
+//TODO: make objects JSON so we can keep them in external files and pull them in as needed
+
 class GameObject
 {
 public:
@@ -15,8 +17,11 @@ public:
     GameObject(sf::Sprite, sf::Texture);
     GameObject(sf::Sprite);
     GameObject(sf::Texture);
+    GameObject(std::string);
     GameObject(std::string, float, float);
-    GameObject::GameObject(std::string, float, float, bool);
+    GameObject(std::string, float, float, bool);
+    GameObject(sf::Sprite, sf::Texture, float, float);
+    GameObject(sf::Sprite, sf::Texture, float, float, bool);
     ~GameObject();
     void setFocus(bool);
     bool toggleFocus();
@@ -27,5 +32,5 @@ public:
 protected:
     bool isFocus;
     bool clickable;
+    GUID objectId;
 };
-

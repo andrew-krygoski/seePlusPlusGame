@@ -13,6 +13,8 @@
 
 static void handleEvent(sf::Event event);
 
+//as the game starts, we instantiate theGame object in the GameObject.h
+//      it creates the beautiful theWindow and other objects referenced here without us having to create them
 int main()
 {
     //Initialize Event, which is what we use to handle User Input

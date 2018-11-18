@@ -1,11 +1,12 @@
 ﻿  Game.cpp
+  GameObject.cpp
   Interaction.cpp
   WindowControl.cpp
   main.cpp
-main.cpp(63): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+main.cpp(65): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
   Generating code
-  9 of 269 functions ( 3.3%) were compiled, the rest were copied from previous compilation.
+  9 of 270 functions ( 3.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+    4 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   seePlusPlus.vcxproj -> E:\Visual Studio\Projects\seePlusPlusGame\x64\Release\seePlusPlus.exe

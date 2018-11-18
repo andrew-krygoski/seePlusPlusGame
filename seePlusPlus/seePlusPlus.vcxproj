@@ -129,6 +129,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EventTrigger.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="Interaction.cpp" />
@@ -137,6 +138,7 @@
     <ClCompile Include="WindowControl.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EventTrigger.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="Interaction.h" />

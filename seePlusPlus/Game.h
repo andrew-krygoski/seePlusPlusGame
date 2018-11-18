@@ -3,6 +3,10 @@
 #define G_O
 #include "GameObject.h"
 #endif // G_O
+#ifndef ET_O
+#define ET_O
+#include "EventTrigger.h"
+#endif // GT_O
 
 static class Game
 {
@@ -32,9 +36,7 @@ public:
     }
 
     static std::vector<GameObject> constantObjects;
-    
-    //I want to put a list of triggers so that the Interaction class can cycle through the triggers and apply the effects
-
+    static std::vector<EventTrigger> eventTriggers;
 
     static bool init;
 } theGame;

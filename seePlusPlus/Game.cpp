@@ -6,6 +6,7 @@ std::vector<GameObject> Game::constantObjects{
     GameObject("wordStart.PNG", 268, 680),  
     GameObject("titleScreen.PNG", 100, 100),
     GameObject("wordNah.PNG", 811, 680)
+    //,GameObject("wut.PNG", 0, 0, true)
 };
 
 /*
