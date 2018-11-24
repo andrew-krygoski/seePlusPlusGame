@@ -38,7 +38,7 @@ public:
     static void handleMousePress(sf::Event event)
     {
         if (event.mouseButton.button == sf::Mouse::Left) {
-            std::cout << "Button pressed at:" << event.mouseButton.x << "," << event.mouseButton.y << std::endl;
+            std::cout << "Mouse clicked at:" << event.mouseButton.x << "," << event.mouseButton.y << std::endl;
         }
         else
             std::cout << "Stop right clicking";

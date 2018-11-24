@@ -33,4 +33,21 @@ protected:
     bool isFocus;
     bool clickable;
     GUID objectId;
+    int gameObjectType; 
+
+    //TODO: might not be necessary to record
+    GUID triggersAssociated[];
 };
+
+static enum GameObjectType { Sentient, Nonsentient, Scene };
+
+/*
+//GameObject JSON
+{
+isFocus: bool,
+clickable: bool,
+objectId: GUID,
+gameObjectType: int,
+triggersToLoad: GUID[]
+}
+*/
